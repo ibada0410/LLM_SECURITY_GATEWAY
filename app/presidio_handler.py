@@ -23,9 +23,9 @@ class CustomPresidio:
         try:
             # Phone Number
             phone_patterns = [
-                Pattern(name="phone_1", regex=r"03[0-9]{2}[- ]?[0-9]{7}", score=0.85),
-                Pattern(name="phone_2", regex=r"03[0-9]{9}", score=0.85),
-                Pattern(name="phone_3", regex=r"\+92[0-9]{10}", score=0.85),
+                Pattern(name="phone_1", regex=r"03[0-9]{2}[- ]?[0-9]{7}", score=0.10),
+                Pattern(name="phone_2", regex=r"03[0-9]{9}", score=0.10),
+                Pattern(name="phone_3", regex=r"\+92[0-9]{10}", score=0.10),
             ]
             phone_recognizer = PatternRecognizer(
                 supported_entity="PHONE_NUMBER",
